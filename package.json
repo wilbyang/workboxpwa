@@ -1,0 +1,20 @@
+{
+  "name": "workboxnews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node server.js",
+    "clean": "rm -rf dist && mkdir dist",
+    "copy": "cp src/* dist/",
+    "build": "npm run clean && npm run copy && workbox injectManifest"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "workbox-cli": "^3.6.3"
+  }
+}

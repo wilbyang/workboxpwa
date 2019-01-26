@@ -1,0 +1,2 @@
+1. workbox-config 自身可以决定一部分缓存逻辑，css,html,js,png
+2. 一部分缓存逻辑同时还写在swSrc: './src/sw.js'里面
